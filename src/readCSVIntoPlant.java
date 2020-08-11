@@ -5,13 +5,16 @@ import java.io.IOException;
 
 public class readCSVIntoPlant {
 
-    public static String[][] readCSVIntoArray(String pathToCSV) throws IOException {
+    public static Plant readCSVIntoArray(String pathToCSV) throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(pathToCSV));
+        Plant plant = new Plant();
         String row;
         while ((row = csvReader.readLine()) != null) {
             String[] data = row.split(",");
+            plant.popularityRanking = Integer.parseInt(data[0]);
             // do something with the data
         }
         csvReader.close();
+        return plant;
     }
 }

@@ -1,4 +1,4 @@
-public class plant {
+public class Plant {
 
     int popularityRanking = 0;
     String commonName = "";
