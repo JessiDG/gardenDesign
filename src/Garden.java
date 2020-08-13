@@ -12,6 +12,12 @@ public class Garden {
     boolean shade = false;
     boolean sun = false;
     boolean partShade = false;
+    String[] colors = new String[];
+
+
+    public Garden garden(int width, int height, String[] colors, boolean shade, boolean sun, boolean partShade){
+
+    }
 
     public void setSun(boolean sun) {
         this.sun = sun;
@@ -33,11 +39,7 @@ public class Garden {
         this.height = height;
     }
 
-    public void setColor0(String color0) {
-        this.color0 = color0;
-    }
-
-    public void setColors(String color0, String color1, String color2, String color3, String color4, String color5, String color6){
+    public String[] setColors(String color0, String color1, String color2, String color3, String color4, String color5, String color6){
         setColor0(color0);
         setColor1(color1);
         setColor2(color2);
@@ -45,6 +47,12 @@ public class Garden {
         setColor4(color4);
         setColor5(color5);
         setColor6(color6);
+        this.colors = new String[]{getColor0(), getColor1(), getColor2(), getColor3(), getColor4(), getColor5(), getColor6()};
+        return this.colors;
+    }
+
+    public void setColor0(String color0) {
+        this.color0 = color0;
     }
 
     public void setColor1(String color1) {
