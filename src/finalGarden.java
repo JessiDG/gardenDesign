@@ -1,7 +1,9 @@
 public class finalGarden {
 
     Garden inputtedGarden = new Garden();
-    String[][] gardenGrid = new String[][]{};
+    Plant[] inputtedPlants = inputtedGarden.plants;
+    Plant[] finalPlantList = new Plant[]{};
+    String[][] gardenGrid = new String[inputtedGarden.length][inputtedGarden.width];
 
 //    public finalGarden(Garden garden){
 //
@@ -16,7 +18,32 @@ public class finalGarden {
         return inputtedGarden;
     }
 
+    public Plant[] honedDownGarden(){
+        int numFinalPlants = 0;
+        //Make a new garden only of the plants that fit the requirements
+        for(int i = 0; i< this.inputtedPlants.length; i++){
+            Plant currentPlant = this.inputtedPlants[i];
+            if(currentPlant.sun == inputtedGarden.sun || currentPlant.sun == inputtedGarden.shade || currentPlant.sun == inputtedGarden.partShade){
+                for(int j = 0; j < inputtedGarden.colors.length; j++){
+                    if (currentPlant.flowerColor == inputtedGarden.colors[j]){
+                        finalPlantList[numFinalPlants] = currentPlant;
+                        numFinalPlants ++;
+                    }
+                }
+            }
+
+        }
+        return finalPlantList;
+    }
+
+//    public Plant[] sortPlantsByHeight(){
+//        Plant[] sortedPlants = new Plant[this.finalPlantList.length];
+//    }
+
+
+
     public static String placePlants(){
+
         String returnString = ".";
         return returnString;
     }

@@ -9,13 +9,13 @@ public class Garden {
     String color4 = "";
     String color5 = "";
     String color6 = "";
-    boolean shade = false;
-    boolean sun = false;
-    boolean partShade = false;
+    String shade = "Full Shade";
+    String sun = "Full Sun";
+    String partShade = "Part Shade";
     String[] colors = new String[]{};
+    Plant[] plants = new Plant[]{};
 
-
-    public void garden(int width, int length, String[] colors, boolean shade, boolean sun, boolean partShade){
+    public void garden(int width, int length, String[] colors, String shade, String sun, String partShade){
         setColors(color0, color1, color2,color3,color4,color5, color6);
         setLength(length);
         setWidth(width);
@@ -24,15 +24,19 @@ public class Garden {
         setSun(sun);
     }
 
-    public void setSun(boolean sun) {
+    public void setPlants(Plant[] plants) {
+        this.plants = plants;
+    }
+
+    public void setSun(String sun) {
         this.sun = sun;
     }
 
-    public void setPartShade(boolean partShade) {
+    public void setPartShade(String partShade) {
         this.partShade = partShade;
     }
 
-    public void setShade(boolean shade) {
+    public void setShade(String shade) {
         this.shade = shade;
     }
 
@@ -118,6 +122,10 @@ public class Garden {
 
     public String getColor6() {
         return color6;
+    }
+
+    public Plant[] getPlants() {
+        return plants;
     }
 }
 //218

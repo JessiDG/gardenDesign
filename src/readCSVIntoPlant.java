@@ -24,5 +24,19 @@ public class ReadCSVIntoPlant
         {
             e.printStackTrace();
         }
+
+        public static Plant[] convertPlantLengthAndHeightToInt(){
+            //split string into different heights and widths
+        //Output will be 4 ints
+        }
+
+        public static Plant[] readPlantsIntoPlantList(){
+            Plant[] plants = new Plant[]{};
+            //read into plant array or list, choose
+            //Add them in so it is sorted by maxHeight
+            return plants
+    }
+
+
     }
 }
