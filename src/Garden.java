@@ -12,12 +12,12 @@ public class Garden {
     boolean shade = false;
     boolean sun = false;
     boolean partShade = false;
-    String[] colors = new String[];
+    String[] colors = new String[]{};
 
-
-    public Garden garden(int width, int height, String[] colors, boolean shade, boolean sun, boolean partShade){
-
-    }
+//
+//    public Garden garden(int width, int height, String[] colors, boolean shade, boolean sun, boolean partShade){
+//
+//    }
 
     public void setSun(boolean sun) {
         this.sun = sun;
