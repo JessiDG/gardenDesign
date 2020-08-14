@@ -15,7 +15,6 @@ public class finalGarden {
 //
 //    }
 
-
     public void setTrees(Plant[] trees) {
         this.trees = trees;
     }
@@ -121,13 +120,14 @@ public class finalGarden {
 
 
 
-    public String placePlants(){
+    public String placePlants() {
 
-        for(int i = 0; i < this.inputtedGarden.length; i++){
-            for(int j = 0; j < this.inputtedPlants)
+        for (int i = 0; i < this.inputtedGarden.length; i++) {
+            for (int j = 0; j < this.inputtedPlants.length; j++) {
+            }
+            String returnString = ".";
+            return returnString;
         }
-        String returnString = ".";
-        return returnString;
     }
 
     public static String wrapBox(){
