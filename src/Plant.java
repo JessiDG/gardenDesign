@@ -14,6 +14,7 @@ public class Plant {
     int widthHighestFt = 0;
     int widthLowestFMetric = 0;
     int widthHighestFMetric = 0;
+    boolean CANative = true;
     String growthRate = "";
     String deciduousVsEvergreen = "";
     String flowerColor = "";
@@ -27,6 +28,10 @@ public class Plant {
     String availabilityInNurseries = "";
     String plantUrl = "";
     String QRCodes = ""; // note: change number to change image size in pixels
+
+    public void setCANative(boolean CANative) {
+        this.CANative = CANative;
+    }
 
     public void setPopularityRanking(int popularityRanking) {
         this.popularityRanking = popularityRanking;
